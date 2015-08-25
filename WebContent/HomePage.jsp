@@ -8,24 +8,24 @@
 
 </head>
 <body  background="world.JPEG">
-<h1 class="text" align="center" ><span>快递管理系统</span></h1>
+<h1 class="text" align="center" ><span>Express delivery notification system</span></h1>
 <table align="center" height="600">
 <tr>
-<td><input type="button" value="添加员工信息" onclick="window.location.href='AddEMP.jsp'"></td>
+<td><input type="button" value="Add employee's info" onclick="window.location.href='AddEMP.jsp'"></td>
 </tr>
 
 <tr>
-<td><input type="button" value="添加快递信息" onclick="window.location.href='AddTask.jsp'"></td>
+<td><input type="button" value="Add new express delivery" onclick="window.location.href='AddTask.jsp'"></td>
 </tr>
 <tr>
-<td><input type="button" value="查看员工信息" onclick="window.location.href='ShowEMP.jsp'"></td>
+<td><input type="button" value="check employee's info" onclick="window.location.href='ShowEMP.jsp'"></td>
 </tr>
 <tr>
-<td><input type="button" value="查看快递信息" onclick="window.location.href='ShowTask.jsp'"></td>
+<td><input type="button" value="check delivery's info" onclick="window.location.href='ShowTask.jsp'"></td>
 </tr>
 
 <tr>
-<td><input type="button" value="  完 成 收 件  " onclick="window.location.href='Receive.jsp'"></td>
+<td><input type="button" value="  Receive delivery  " onclick="window.location.href='Receive.jsp'"></td>
 </tr>
 </table>
 </body>

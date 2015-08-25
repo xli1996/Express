@@ -14,21 +14,21 @@ function openwin(){
 }
 </script>
 <body>
-<h1 align="center">快递面单信息</h1>
+<h1 align="center">Express delivery info</h1>
 <form action="SearchTask.jsp" method="get">
 <table>
 
 <tr>
-<td>面单号:</td>
+<td>Delivery Number:</td>
 <td><input type="text" name="taskNum"></td>
 </tr>
 
 <tr>
-<td><input type="submit" value="查找"/></td>
+<td><input type="submit" value="search"/></td>
 </tr>
 </table>
 <br/>
-<p>现在只支持面单号精确查询</p>
+<p>please enter the exact delivery number</p>
 </form>
 <% 
 	ResultSet rs = new Control().selectTask(request,true,"*");
@@ -36,15 +36,15 @@ function openwin(){
 <table align="center" border="1" width="600" height="50">
 
 <tr>
-<td>面单号</td>
-<td>手机</td>
-<td>姓名</td>
-<td>部门</td>
+<td>Delivery Number</td>
+<td>Phone</td>
+<td>Name</td>
+<td>Department</td>
 <td>Email</td>
-<td>快递公司</td>
-<td>录入时间</td>
-<td>收件</td>
-<td>邮件提醒</td>
+<td>Express Company</td>
+<td>Input Time</td>
+<td>Receive</td>
+<td>Delivery Notification</td>
 </tr>
 <%	Page ppage=new Page();
 
@@ -76,14 +76,14 @@ ppage.init(rs,request,tmp);
 <td><%out.println(email);%></td>
 <td><%out.println(company);%></td>
 <td><%out.println(inTime);%></td>
-<td><input type="button" value="收件" onclick="window.location.href='IdCheck.jsp?taskNum=<%=taskNum%>'"></td>
-<td><a href="SendEmail?email=<%=email%>">发送邮件</a></td>
+<td><input type="button" value="Receive" onclick="window.location.href='IdCheck.jsp?taskNum=<%=taskNum%>'"></td>
+<td><a href="SendEmail?email=<%=email%>">Send Email</a></td>
 <%} %>
 </table>
-第<%=ppage.getCurPage()%>页/共<%=ppage.getPageCount()%>页  
-<a href = "Receive.jsp?curPage=<%=ppage.getCurPage()-1%>" >上一页</a>  
-<a href = "Receive.jsp?curPage=<%=ppage.getCurPage()+1%>" >下一页</a> 
-<input type="button"  value="上一页" onclick="javascript:history.back(-1);">
-<input type="button"  value="返回主页" onclick="window.location.href='HomePage.jsp'">
+current<%=ppage.getCurPage()%>page/totally<%=ppage.getPageCount()%>page  
+<a href = "Receive.jsp?curPage=<%=ppage.getCurPage()-1%>" >Back page</a>  
+<a href = "Receive.jsp?curPage=<%=ppage.getCurPage()+1%>" >Next page</a> 
+<input type="button"  value="Back" onclick="javascript:history.back(-1);">
+<input type="button"  value="Homepage" onclick="window.location.href='HomePage.jsp'">
 </body>
 </html>

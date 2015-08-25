@@ -7,18 +7,18 @@
 <title>EMP information update</title>
 </head>
 <body>
-<h1>修改员工信息</h1>
-<h2>只填需要修改的项（不需修改则留空）</h2>
+<h1>update employee's info</h1>
+<h2>fill info which you need to change（leave blank with those you don't want to change）</h2>
 <form action="EMPUpdate" method="get">
 <table align="center">
 
 <tr>
-<td>姓名：</td>
+<td>Name：</td>
 <td><input type="text" name="name"></td>
 </tr>
 
 <tr>
-<td>部门：</td>
+<td>Department：</td>
 <td><input type="text" name="department"></td>
 </tr>
 
@@ -27,12 +27,12 @@
 <td> <input type="text" name="email"/></td>
 </tr>
 <tr>
-<td><input type="submit" value="提交"/></td>
+<td><input type="submit" value="submit"/></td>
 </tr>
 </table>
 </form>
-<input type="button"  value="上一页" onclick="javascript:history.back(-1);">
-<input type="button"  value="返回主页" onclick="window.location.href='HomePage.jsp'">
+<input type="button"  value="Back" onclick="javascript:history.back(-1);">
+<input type="button"  value="Homepage" onclick="window.location.href='HomePage.jsp'">
 
 </body>
 </html>

@@ -8,7 +8,7 @@
 <title>SearchTask</title>
 </head>
 <body>
-<h1 align="center">快递信息</h1>
+<h1 align="center">Express Delivery info</h1>
 <% 	String taskNum=request.getParameter("taskNum");
 	session.setAttribute("taskNum", taskNum);
 	ResultSet rs=new Control().selectTask(request,false,taskNum);
@@ -24,18 +24,18 @@
 <table align="center" border="1" width="900" height="100">
 
 <tr>
-<td>面单号</td>
-<td>手机</td>
-<td>姓名</td>
-<td>部门</td>
+<td>Delivery Number</td>
+<td>Phone</td>
+<td>Name</td>
+<td>Department</td>
 <td>Email</td>
-<td>快递公司</td>
-<td>录入时间</td>
-<td>验证码</td>
-<td>删除</td>
-<td>修改</td>
-<td>访问员工信息</td>
-<td>收件</td>
+<td>Express Company</td>
+<td>Input Time</td>
+<td>Identification</td>
+<td>Delete</td>
+<td>Update</td>
+<td>access this employee's info</td>
+<td>Receive</td>
 </tr>
 
 <tr>
@@ -47,10 +47,10 @@
 <td><%out.println(company);%></td>
 <td><%out.println(inTime);%></td>
 <td><%out.println(idNum);%></td>
-<td><input type="button"  value="删除" onclick="window.location.href='DeleteTask'"></td>
-<td><input type="button" value="修改" onclick="window.location.href='TaskUpdate.jsp'"></td>
-<td><input type="button"  value="访问员工信息" onclick="window.location.href='Search.jsp'"></td>
-<td><input type="button" value="收件" onclick="window.location.href='IdCheck.jsp?taskNum=<%=taskNum%>'"></td>
+<td><input type="button"  value="Delete" onclick="window.location.href='DeleteTask'"></td>
+<td><input type="button" value="Update" onclick="window.location.href='TaskUpdate.jsp'"></td>
+<td><input type="button"  value="access this employee's info" onclick="window.location.href='Search.jsp'"></td>
+<td><input type="button" value="Receive" onclick="window.location.href='IdCheck.jsp?taskNum=<%=taskNum%>'"></td>
 <%
 //using seesion to access the EMP info
 String TphoneNum=phoneNum;
@@ -59,9 +59,9 @@ session.setAttribute("taskNum",taskNum);
 %>
 </table>
 <%}else{ %>
-<p>并无此快递号码</p>	
+<p>This delivery number doesn't exist</p>	
 <% }%>
-<input type="button"  value="上一页" onclick="javascript:history.back(-1);">
-<input type="button"  value="返回主页" onclick="window.location.href='HomePage.jsp'">
+<input type="button"  value="Back" onclick="javascript:history.back(-1);">
+<input type="button"  value="Homepage" onclick="window.location.href='HomePage.jsp'">
 </body>
 </html>

@@ -13,7 +13,7 @@
 <title>Show all the EMPs</title>
 </head>
 <body>
-<h1 align="center" style="color:crimson">员工信息</h1>
+<h1 align="center" style="color:crimson">Employee's info</h1>
 
 
 <% ResultSet rs=new Control().selectEMP(request,true,"*");
@@ -21,9 +21,9 @@
 <table align="center" border="1" width="500" height="50">
 
 <tr>
-<td>手机</td>
-<td>姓名</td>
-<td>部门</td>
+<td>Phone</td>
+<td>Name</td>
+<td>Department</td>
 <td>Email</td>
 </tr>
 <%	

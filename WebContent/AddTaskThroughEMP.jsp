@@ -8,36 +8,36 @@
 
 </head>
 <body>
-<h2 align="center" style="color:crimson">通过员工信息添加新快递</h2>
+<h2 align="center" style="color:crimson">Add new express delivery via employee's info</h2>
 <form action="AddTaskThroughEMP" method="get">
 <table align="center" >
 <tr>
-<td>面单号：</td>
+<td>Delivery Number：</td>
 <td><input type="text" name="taskNum"></td>
 </tr>
 
 <tr>
-<td>快递公司：</td>
+<td>Express Company：</td>
 <td><input type="text" name="company"></td>
 </tr>
 
 <tr>
-<td>录入时间：</td>
+<td>Input Time：</td>
 <td><input type="text" name="inTime"></td>
 </tr>
 
 <tr>
-<td>验证码：</td>
+<td>identification number：</td>
 <td><input type="text" name="IdNum"></td>
 </tr>
 
 <tr>
-<td><input type="submit" value="提交"/></td>
+<td><input type="submit" value="submit"/></td>
 </tr>
 
 </table>
 </form>
-<input type="button"  value="上一页" onclick="javascript:history.back(-1);">
-<input type="button"  value="返回主页" onclick="window.location.href='HomePage.jsp'">
+<input type="button"  value="Back" onclick="javascript:history.back(-1);">
+<input type="button"  value="Homepage" onclick="window.location.href='HomePage.jsp'">
 </body>
 </html>

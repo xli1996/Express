@@ -7,21 +7,21 @@
 <title>add EMP</title>
 </head>
 <body>
-<h1 align="center">添加员工</h1>
+<h1 align="center">ADD EMPLOYEE's information'"</h1>
 <form action="AddEMP" method="get">
 <table align="center">
 <tr>
-<td>手机：</td>
+<td>Phone：</td>
 <td> <input type="text" name="phoneNum"></td>
 </tr>
 
 <tr>
-<td>姓名：</td>
+<td>Name：</td>
 <td><input type="text" name="name"></td>
 </tr>
 
 <tr>
-<td>部门：</td>
+<td>Department：</td>
 <td><input type="text" name="department"></td>
 </tr>
 
@@ -30,11 +30,11 @@
 <td> <input type="text" name="email"/></td>
 </tr>
 <tr>
-<td><input type="submit" value="提交"/></td>
+<td><input type="submit" value="submit"/></td>
 </tr>
 </table>
 </form>
-<input type="button"  value="上一页" onclick="javascript:history.back(-1);">
-<input type="button"  value="返回主页" onclick="window.location.href='HomePage.jsp'">
+<input type="button"  value="Back" onclick="javascript:history.back(-1);">
+<input type="button"  value="Homepage" onclick="window.location.href='HomePage.jsp'">
 </body>
 </html>

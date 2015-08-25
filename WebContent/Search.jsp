@@ -14,7 +14,7 @@ function openwin(){
 </script>
 </head>
 <body>
-<h1 align="center">员工信息</h1>
+<h1 align="center">employee's info'</h1>
 <%	String phoneNum;
 	if(session.getAttribute("TphoneNum")!=null)
 {
@@ -36,28 +36,28 @@ function openwin(){
 <table border="1" width="600" height="50" align="center">
 
 <tr>
-<td>电话</td>
-<td>姓名</td>
-<td>部门</td>
+<td>Phone</td>
+<td>Name</td>
+<td>Department</td>
 <td>Email</td>
-<td>删除</td>
-<td>修改</td>
-<td>添加新快递</td>
+<td>Delete</td>
+<td>Update</td>
+<td>Add new delivery</td>
 </tr>
 <tr>
 <td><%out.println(phoneNum); %></td>
 <td><%out.println(name);%></td>
 <td><%out.println(department);%></td>
 <td><%out.println(email);%></td>
-<td><input type="button"  value="删除" onclick="window.location.href='Delete'"></td>
-<td><input type="button" value="修改" onclick="window.location.href='EMPUpdate.jsp'"></td>
-<td><input type="button"  value="添加新快递" onclick="openwin()"></td>
+<td><input type="button"  value="delete" onclick="window.location.href='Delete'"></td>
+<td><input type="button" value="update" onclick="window.location.href='EMPUpdate.jsp'"></td>
+<td><input type="button"  value="add new delivery" onclick="openwin()"></td>
 </tr>
 </table>
 <%}else{ %>
-<p>并无此手机号码</p>	
+<p>phone number doesn't exist</p>	
 <% }%>
-<input type="button"  value="上一页" onclick="javascript:history.back(-1);">
-<input type="button"  value="返回主页" onclick="window.location.href='HomePage.jsp'">
+<input type="button"  value="Back" onclick="javascript:history.back(-1);">
+<input type="button"  value="Homepage" onclick="window.location.href='HomePage.jsp'">
 </body>
 </html>

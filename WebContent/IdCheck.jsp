@@ -6,26 +6,26 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Identify Number Checking</title>
 </head>
-<h2>请输入验证码</h2>
+<h2>Please enter identification number</h2>
 <%if(request.getParameter("checked")!=null){ %>
-<h3>验证码错误</h3>
+<h3>identification number uncorrect</h3>
 <%} %>
 <body>
 <form action="IdCheck" method="get">
 <table align="center">
 
 <tr>
-<td>验证码</td>
+<td>Identify Number</td>
 <td><input type="text" name="IdNum"></td>
 </tr>
 
 <tr>
-<td>面单号</td>
+<td>Number</td>
 <td><input type="text" readonly="readonly"  name="taskNum" value=<%=request.getParameter("taskNum")%>></td>
 </tr>
 
 <tr>
-<td><input type="submit" value="验证"></td>
+<td><input type="submit" value="submit"></td>
 </tr>
 </table>
 </form>

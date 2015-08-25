@@ -12,7 +12,7 @@
 <title>Show all the tasks</title>
 </head>
 <body>
-<h1 align="center">快递面单信息</h1>
+<h1 align="center">Express delivery info</h1>
 
 <%  ResultSet rs;
 		rs = new Control().selectTask(request,true,"*");
@@ -20,14 +20,14 @@
 <table align="center" border="1" width="600" height="50">
 
 <tr>
-<td>面单号</td>
-<td>手机</td>
-<td>姓名</td>
-<td>部门</td>
+<td>Number</td>
+<td>Phone</td>
+<td>Name</td>
+<td>Department</td>
 <td>Email</td>
-<td>快递公司</td>
-<td>录入时间</td>
-<td>验证码</td>
+<td>Express Company</td>
+<td>Input Time</td>
+<td>Identification Number</td>
 </tr>
 <%	
 	while(rs.next()){

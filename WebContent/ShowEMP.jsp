@@ -12,24 +12,24 @@
 <title>Show all the EMPs</title>
 </head>
 <body>
-<h1 align="center" style="color:crimson">员工信息</h1>
+<h1 align="center" style="color:crimson">Employss's  info</h1>
 
 <form action="Search.jsp" method="get">
-手机： <input type="text" name="phoneNum">
-<input type="submit" value="查找"/>
+Phone： <input type="text" name="phoneNum">
+<input type="submit" value="search"/>
 <br/>
-<p>现在只支持手机精确查询</p>
+<p>please enter the exact phone number</p>
 </form>
 <% ResultSet rs=new Control().selectEMP(request,true,"*");
 %>
 <table align="center" border="1" width="500" height="50">
 
 <tr>
-<td>手机</td>
-<td>姓名</td>
-<td>部门</td>
+<td>Phone</td>
+<td>Name</td>
+<td>Department</td>
 <td>Email</td>
-<td>查看他的快递</td>
+<td>search employee's express</td>
 </tr>
 <%	Page ppage=new Page();
 	
@@ -54,19 +54,19 @@
 <td><%out.println(name);   %></td>
 <td><%out.println(department); %></td>
 <td><%out.println(email);%></td>
-<td><input type="button" value="查看他的快递" onclick="window.location.href='ShowTask.jsp?phoneNum=<%=phoneNum%>'"></td>
+<td><input type="button" value="search employee's express" onclick="window.location.href='ShowTask.jsp?phoneNum=<%=phoneNum%>'"></td>
 </tr>
 <%}; %>
 
 </table>
 第<%=ppage.getCurPage()%>页/共<%=ppage.getPageCount()%>页  
-<a href = "ShowEMP.jsp?curPage=<%=ppage.getCurPage()-1%>" >上一页</a>  
-<a href = "ShowEMP.jsp?curPage=<%=ppage.getCurPage()+1%>" >下一页</a>  
-<input type="button"  onclick="javascript:history.back(-1);" value="返回上一页">
-<input type="button"  value="返回主页" onclick="window.location.href='HomePage.jsp'">
-<input type="button"  value="继续添加" onclick="window.location.href='AddEMP.jsp'">
-<input type="button"  value="导出excel（全）" onclick="window.location.href='ShowEMPExcel.jsp'">
-<input type="button"  value="导出本页excel" onclick="window.location.href='ShowEMP.jsp?Excel=right'">
+<a href = "ShowEMP.jsp?curPage=<%=ppage.getCurPage()-1%>" >Back</a>  
+<a href = "ShowEMP.jsp?curPage=<%=ppage.getCurPage()+1%>" >Next</a>  
+<input type="button"  onclick="javascript:history.back(-1);" value="Back">
+<input type="button"  value="Homepage" onclick="window.location.href='HomePage.jsp'">
+<input type="button"  value="Continue" onclick="window.location.href='AddEMP.jsp'">
+<input type="button"  value="download excel（all）" onclick="window.location.href='ShowEMPExcel.jsp'">
+<input type="button"  value="download excel (this page)" onclick="window.location.href='ShowEMP.jsp?Excel=right'">
 
 
 </body>

@@ -7,27 +7,27 @@
 <title>add EMP</title>
 </head>
 <body>
-<h1 align="center">快递面单信息录入</h1>
+<h1 align="center">Express delivery information</h1>
 
 <form action="AddTask" method="get">
 <table align="center">
 <tr>
-<td>面单号：</td>
+<td>Delivery Number：</td>
 <td><input type="text" name="taskNum"></td>
 </tr>
 
 <tr>
-<td>手机：</td>
+<td>Phone：</td>
 <td><input type="text" name="phoneNum"></td>
 </tr>
 
 <tr>
-<td>姓名：</td>
+<td>Name：</td>
 <td><input type="text" name="name"></td>
 </tr>
 
 <tr>
-<td>部门：</td>
+<td>Department：</td>
 <td><input type="text" name="department"></td>
 </tr>
 
@@ -37,28 +37,28 @@
 </tr>
 
 <tr>
-<td>快递公司：</td>
+<td>Express Company：</td>
 <td><input type="text" name="company"></td>
 </tr>
 
 <tr>
-<td>录入时间：</td>
+<td>Input Time：</td>
 <td><input type="text" name="inTime"></td>
 </tr>
 
 <tr>
-<td>验证码：</td>
+<td>Identification number：</td>
 <% RandomID r=new RandomID();%>
 <td><input type="text" readonly="readonly" name="IdNum" value=<%=r.getIdNum() %>></td>
 </tr>
 
 <tr>
-<td><input type="submit" value="提交"/></td>
+<td><input type="submit" value="submit"/></td>
 </tr>
 </table>
 </form>
-<input type="button"  value="上一页" onclick="javascript:history.back(-1);">
-<input type="button"  value="返回主页" onclick="window.location.href='HomePage.jsp'">
-<input type="button"  value="继续添加" onclick="window.location.href='AddTask.jsp'">
+<input type="button"  value="Back" onclick="javascript:history.back(-1);">
+<input type="button"  value="Homepage" onclick="window.location.href='HomePage.jsp'">
+<input type="button"  value="Continue" onclick="window.location.href='AddTask.jsp'">
 </body>
 </html>

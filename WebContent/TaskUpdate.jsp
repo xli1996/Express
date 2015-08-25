@@ -7,23 +7,23 @@
 <title>EMP information update</title>
 </head>
 <body>
-<h1>修改快递信息</h1>
-<h2>只填需要修改的项（不需修改则留空）</h2>
+<h1>Update Express delivery info</h1>
+<h2>change where you want（leave empty where you dont want to change）</h2>
 <form action="TaskUpdate" method="get">
 <table align="center">
 
 <tr>
-<td>手机：</td>
+<td>Phone：</td>
 <td><input type="text" name="phoneNum"></td>
 </tr>
 
 <tr>
-<td>姓名：</td>
+<td>Name：</td>
 <td><input type="text" name="name"></td>
 </tr>
 
 <tr>
-<td>部门：</td>
+<td>Department：</td>
 <td><input type="text" name="department"></td>
 </tr>
 
@@ -33,25 +33,25 @@
 </tr>
 
 <tr>
-<td>快递公司：</td>
+<td>Express Company：</td>
 <td><input type="text" name="company"></td>
 </tr>
 
 <tr>
-<td>录入时间：</td>
+<td>Input Time：</td>
 <td><input type="text" name="inTime"></td>
 </tr>
 
 <tr>
-<td>验证码：</td>
+<td>identification time：</td>
 <td><input type="text" name="IdNum"></td>
 </tr>
 <tr>
-<td><input type="submit" value="提交"/></td>
+<td><input type="submit" value="submit"/></td>
 </tr>
 </table>
 </form>
-<input type="button"  value="返回主页" onclick="window.location.href='HomePage.jsp'">
+<input type="button"  value="homepage" onclick="window.location.href='HomePage.jsp'">
 
 
 </body>
